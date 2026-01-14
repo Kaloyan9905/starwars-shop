@@ -1,4 +1,3 @@
-/* Buttons */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -16,17 +15,28 @@
     color: var(--black);
 }
 
-/* Products Grid */
-.products-grid {
+.products-grid,
+.features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 1.5rem;
 }
 
-/* Product Cards */
-.product-card {
+.products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.product-card,
+.feature-card,
+.about-content {
     background: var(--dark);
     border-radius: 8px;
+}
+
+.product-card {
     overflow: hidden;
     max-width: 320px;
     cursor: pointer;
@@ -38,22 +48,31 @@
     box-shadow: 0 10px 30px rgba(255, 232, 31, 0.15);
 }
 
-.product-image { background: var(--black); }
+.product-image,
+.modal-image {
+    background: var(--black);
+}
 
-.product-image img {
+.product-image img,
+.modal-image img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.product-info { 
-    padding: 1rem; 
+.product-info {
+    padding: 1rem;
 }
 
-.product-category {
+.product-category,
+.modal-category {
     font-size: 0.75rem;
     color: var(--gray);
     text-transform: uppercase;
+}
+
+.modal-category {
+    letter-spacing: 1px;
 }
 
 .product-name {
@@ -61,7 +80,6 @@
     margin: 0.5rem 0;
 }
 
-/* Filter Buttons */
 .filter-container {
     display: flex;
     justify-content: center;
@@ -85,25 +103,15 @@
     color: var(--yellow);
 }
 
-/* Feature Cards */
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-}
-
 #features {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     margin-top: 25px;
 }
 
 .feature-card {
-    background: var(--dark);
     padding: 1.5rem;
-    border-radius: 8px;
     text-align: center;
 }
 
@@ -113,57 +121,61 @@
     margin-bottom: 1rem;
 }
 
-.feature-card h3 {
+.feature-card h3,
+.about-content h2 {
     color: var(--yellow);
     margin-bottom: 0.5rem;
 }
 
-.feature-card p {
+.about-content h2 {
+    margin-bottom: 1rem;
+}
+
+.feature-card p,
+.about-content p,
+.contact-item,
+.modal-description {
     color: var(--gray);
+}
+
+.feature-card p {
     font-size: 0.9rem;
 }
 
-/* About Page */
 .about-content {
-    background: var(--dark);
     padding: 2rem;
-    border-radius: 8px;
-}
-
-.about-content h2 {
-    color: var(--yellow);
-    margin-bottom: 1rem;
 }
 
 .about-content p {
-    color: var(--gray);
     margin-bottom: 1rem;
 }
 
-.contact-info { 
+.contact-info {
     margin-top: 2rem;
- }
+}
 
 .contact-item {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
-    color: var(--gray);
 }
 
-.contact-item .icon {
+.contact-item .icon,
+.modal-close {
     width: 40px;
     height: 40px;
-    background: var(--yellow);
-    color: var(--black);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Modal */
+.contact-item .icon {
+    background: var(--yellow);
+    color: var(--black);
+}
+
 .product-modal {
     position: fixed;
     inset: 0;
@@ -204,17 +216,11 @@
     position: absolute;
     top: 15px;
     right: 15px;
-    width: 40px;
-    height: 40px;
     font-size: 2rem;
     background: rgba(0, 0, 0, 0.5);
     border: none;
-    border-radius: 50%;
     color: var(--white);
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 10;
     transition: all 0.3s;
 }
@@ -224,25 +230,8 @@
     color: var(--black);
 }
 
-.modal-image { 
-    background: var(--black); 
-}
-
-.modal-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.modal-info { 
-    padding: 1.5rem; 
-}
-
-.modal-category {
-    font-size: 0.75rem;
-    color: var(--gray);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.modal-info {
+    padding: 1.5rem;
 }
 
 .modal-name {
@@ -252,6 +241,5 @@
 }
 
 .modal-description {
-    color: var(--gray);
     line-height: 1.7;
 }
