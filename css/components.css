@@ -1,0 +1,257 @@
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.btn:hover,
+.btn-primary {
+    background: var(--yellow);
+    color: var(--black);
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Product Cards */
+.product-card {
+    background: var(--dark);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 320px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 232, 31, 0.15);
+}
+
+.product-image { background: var(--black); }
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-info { 
+    padding: 1rem; 
+}
+
+.product-category {
+    font-size: 0.75rem;
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+/* Filter Buttons */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 2rem 0;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 1px solid var(--gray);
+    color: var(--gray);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    border-color: var(--yellow);
+    color: var(--yellow);
+}
+
+/* Feature Cards */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.feature-card {
+    background: var(--dark);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--yellow);
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: var(--yellow);
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+/* About Page */
+.about-content {
+    background: var(--dark);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.about-content h2 {
+    color: var(--yellow);
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+.contact-info { 
+    margin-top: 2rem;
+ }
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: var(--gray);
+}
+
+.contact-item .icon {
+    width: 40px;
+    height: 40px;
+    background: var(--yellow);
+    color: var(--black);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal */
+.product-modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 250;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.product-modal.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: var(--dark);
+    border-radius: 12px;
+    max-width: 400px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    transform: scale(0.9);
+    transition: transform 0.3s;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 232, 31, 0.2);
+}
+
+.product-modal.open .modal-content {
+    transform: scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.modal-close:hover {
+    background: var(--yellow);
+    color: var(--black);
+}
+
+.modal-image { 
+    background: var(--black); 
+}
+
+.modal-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.modal-info { 
+    padding: 1.5rem; 
+}
+
+.modal-category {
+    font-size: 0.75rem;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.modal-name {
+    font-size: 1.5rem;
+    color: var(--yellow);
+    margin: 0.5rem 0 1rem;
+}
+
+.modal-description {
+    color: var(--gray);
+    line-height: 1.7;
+}

@@ -1,0 +1,110 @@
+/* Header */
+header {
+    background: var(--dark);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+.logo span { 
+    color: var(--white); 
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--white);
+    padding: 0.5rem;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: var(--yellow);
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, var(--dark), var(--black));
+    padding: 4rem 1rem;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--yellow);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: var(--gray);
+    margin-bottom: 2rem;
+}
+
+/* Main */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    color: var(--yellow);
+    text-align: center;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background: var(--dark);
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    color: var(--yellow);
+    margin-bottom: 1rem;
+}
+
+.footer-section a { color: var(--gray); }
+.footer-section a:hover { color: var(--yellow); }
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid var(--gray);
+    color: var(--gray);
+}

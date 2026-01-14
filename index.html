@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Star Wars Shop - Магазин за оригинални Star Wars артикули, фигурки, облекло и аксесоари">
+    <meta name="keywords" content="Star Wars, магазин, фигурки, облекло, аксесоари, мърчандайз">
+    <meta name="author" content="Star Wars Shop">
+    <title>Star Wars Shop - Начало</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">Star <span>Wars</span> Shop</a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Начало</a></li>
+                <li><a href="products.html">Продукти</a></li>
+                <li><a href="about.html">За нас</a></li>
+            </ul>
+
+            <div class="menu-toggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Добре дошли в галактиката</h1>
+            <p>Открийте най-добрата колекция от Star Wars артикули. Фигурки, облекло, аксесоари и много други!</p>
+            <a href="products.html" class="btn btn-primary">Разгледай продуктите</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Featured Products Section -->
+        <section id="featured">
+            <h2 class="section-title">Препоръчани продукти</h2>
+            
+            <div class="products-grid">
+                <!-- Book -->
+                <article class="product-card" data-id="1" data-category="books" data-description="Разкрийте тъмната история на Дарт Плегиъс - Ситският лорд, който обучи Дарт Сидиъс. Роман от колекция 'Легенди' от Джеймс Лусино.">
+                    <div class="product-image"><img src="images/darth-plegius.png" alt="Дарт Плегиъс"></div>
+                    <div class="product-info">
+                        <span class="product-category">Книги</span>
+                        <h3 class="product-name">Дарт Плегиъс</h3>
+                    </div>
+                </article>
+
+                <!-- Comic -->
+                <article class="product-card" data-id="4" data-category="comics" data-description="Първи том от поредицата комикси на Marvel за Дарт Вейдър. 'Имперска машина' разказва за възхода на тъмния лорд след събитията от Епизод III.">
+                    <div class="product-image"><img src="images/darth-vader-tom-1.png" alt="Дарт Вейдър: Имперска машина"></div>
+                    <div class="product-info">
+                        <span class="product-category">Комикси</span>
+                        <h3 class="product-name">Дарт Вейдър: Имперска машина</h3>
+                    </div>
+                </article>
+
+                <!-- LEGO -->
+                <article class="product-card" data-id="9" data-category="lego" data-description="LEGO Star Wars Millennium Falcon (75375) - юбилейно издание за 25 години LEGO Star Wars. 921 части, възраст 18+. Включва мини фигурки.">
+                    <div class="product-image"><img src="images/milenium-falcon-lego.jpg" alt="LEGO Millennium Falcon"></div>
+                    <div class="product-info">
+                        <span class="product-category">LEGO</span>
+                        <h3 class="product-name">LEGO Millennium Falcon</h3>
+                    </div>
+                </article>
+
+                <!-- Figure -->
+                <article class="product-card" data-id="10" data-category="figures" data-description="Премиум колекционерска фигурка на Дарт Вейдър с невероятни детайли. Включва светещ светлинен меч и дисплей стойка.">
+                    <div class="product-image"><img src="images/darth-vader-figure.png" alt="Дарт Вейдър Фигурка"></div>
+                    <div class="product-info">
+                        <span class="product-category">Фигурки</span>
+                        <h3 class="product-name">Дарт Вейдър Фигурка</h3>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <h2 class="section-title">Защо да изберете нас</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-star"></i></div>
+                    <h3>Оригинални продукти</h3>
+                    <p>Гарантираме автентичността на всички продукти</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-truck"></i></div>
+                    <h3>Бърза доставка</h3>
+                    <p>Доставка до 2 работни дни в цялата страна</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Премиум качество</h3>
+                    <p>Само най-качествените Star Wars артикули</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-rotate-left"></i></div>
+                    <h3>Лесно връщане</h3>
+                    <p>30 дни право на връщане без въпроси</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Star Wars Shop</h3>
+                <p>Вашият надежден партньор за Star Wars артикули от 2020 година.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Бързи връзки</h3>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="products.html">Продукти</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> София, ул. Галактика 42</li>
+                    <li><i class="fas fa-phone"></i> +359 888 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@starwarsshop.bg</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Star Wars Shop. Всички права запазени.</p>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div class="product-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Затвори">&times;</button>
+            <div class="modal-image"></div>
+            <div class="modal-info">
+                <span class="modal-category"></span>
+                <h2 class="modal-name"></h2>
+                <p class="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
